@@ -1,0 +1,9 @@
+.dropdown-toggle{
+    background: none;
+    font-size: 1.3rem;
+    color: #888888;
+}
+
+.dropdown-toggle:after{
+    content: none;
+}

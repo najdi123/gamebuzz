@@ -1,0 +1,41 @@
+.horizontalLineGreen {
+    height: 1px;
+    background: #40d929;
+    width: 100%;
+}
+
+.gridItem {
+    margin: 10%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    background: #111111;
+}
+
+.itemImage {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    width: 100%;
+    height: 120px;
+}
+
+.alignRight {
+    text-align: right;
+}
+
+.gridItemText{
+    direction:rtl;
+    padding: 10px 12px;
+    font-size: 1.2rem;
+    font-family: IRSina, serif;
+    margin: 0;
+}
+
+.gridItemText:nth-child(3){
+    color: #0dcc0d;
+    font-size: 1.1rem;
+}
+
+.gridItemText:nth-child(4){
+    font-size: 0.8rem;
+}
+

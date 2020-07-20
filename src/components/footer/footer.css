@@ -1,0 +1,54 @@
+.socialMediaHolder{
+    background: #111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialMediaItem{
+    margin: 10px 30px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.footerItemsHolder{
+    display: flex;
+    background: #222222;
+    padding: 20px 15px;
+    border-bottom: 1px #888888 solid;
+}
+
+.footerItem{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.centerContent{
+    align-items: center;
+}
+
+.footerItem p{
+    padding: 0;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.gbLink{
+width: 200px;
+}
+
+.gbLinkTitle{
+    margin-bottom: 30px;
+}
+
+.gpLink{
+    width: 120px;
+}
+
+.copyRightText{
+    text-align: center;
+    background: #222222;
+    padding: 8px 0;
+    font-size: 1.2rem;
+}

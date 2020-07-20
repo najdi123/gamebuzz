@@ -1,0 +1,5 @@
+.forumTopic > p {
+ text-align: right;
+    padding:  15px 30px;
+    font-size: 1.5rem;
+}

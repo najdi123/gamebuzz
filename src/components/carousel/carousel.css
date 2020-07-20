@@ -1,0 +1,21 @@
+.carousel{
+    border-top: 1px solid #40d929;
+}
+.carouselItem{
+    width: 100%;
+}
+
+.carousel-indicators{
+    margin: 0;
+}
+.carousel-indicators li{
+    width: 100%;
+    border-bottom: none;
+    margin: 0;
+    opacity: 0;
+    background-color: #40d929;
+}
+
+.carousel-control-prev-icon,.carousel-control-next-icon{
+    display: none;
+}

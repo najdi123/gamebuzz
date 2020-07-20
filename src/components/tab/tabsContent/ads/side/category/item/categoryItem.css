@@ -1,0 +1,43 @@
+.categoryItem{
+    margin: 0 17%;
+    transition: all 1s ease-out;
+}
+.categoryItemSection1{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.categoryItemSection1 >p {
+    text-align: right;
+    font-size: 1.7rem;
+}
+
+.flexItem{
+    flex: 1;
+}
+
+.flexItem> img{
+    width: 20px;
+    cursor: pointer;
+}
+
+.expandableBox{
+    width: 100%;
+}
+
+.expandedBox{
+    height: 150px;
+    transition: 0.4s;
+
+}
+
+.collapsedBox{
+    height: 0;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.lastItem{
+    background: red;
+}

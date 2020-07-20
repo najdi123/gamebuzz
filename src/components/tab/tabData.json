@@ -1,0 +1,28 @@
+{
+  "Items": [
+    {
+      "id": "1",
+      "name": "انجمن سوالات",
+      "iconOff": "forum",
+      "iconOn": "forum_off"
+    },
+    {
+      "id": "2",
+      "name": "رسانه و اخبار",
+      "iconOff": "News",
+      "iconOn": "News_ON"
+    },
+    {
+      "id": "3",
+      "name": "اگهی",
+      "iconOff": "Ads",
+      "iconOn": "Ads_on"
+    },
+    {
+      "id": "4",
+      "name": "تورنومنت",
+      "iconOff": "cup",
+      "iconOn": "Cup_ON"
+    }
+  ]
+}

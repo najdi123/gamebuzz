@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'IRSina';
+    font-style: normal;
+    font-weight: 100;
+    src: url(../../fonts/IRSina.ttf);
+}
+
+@font-face {
+    font-family: 'IRZeytoon';
+    font-style: normal;
+    font-weight: 100;
+    src: url(../../fonts/IRZeytoon.ttf);
+}
+
+body {
+    color: #888888;
+    font-family: IRZeytoon, serif;
+}
+
+.nav-item{
+    font-family: IRZeytoon, serif;
+}
+
+.navbarc{
+    position: relative;
+}
+
+.navbar-nav {
+    margin: 0 auto;
+    font-size: 1.4rem;
+}
+
+.nav-link{
+    margin: 0 20px;
+    color:   #888888!important;
+}
+
+.navbar {
+    background: #222222;
+}
+
+.logo {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    height: 26px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.searchBtn {
+    background: none;
+    border: none;
+}
+
+.searchBtn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.searchWrapper{
+  display: flex;
+    align-items: center;
+}
+
+.searchBtn i {
+    color: #888888;
+    font-size: 1.8rem;
+}
+
+.searchBtn > img{
+    height: 20px;
+}
+
+/*general class for search input*/
+.searchInput {
+    border: none;
+    outline: none;
+    height: 30px;
+
+}
+
+/*class for input when expanded*/
+.expandedSearchBox {
+    width: 210px;
+    transition: 0.4s;
+    border-radius: 40px;
+    padding: 10px
+}
+
+/*class for input when collaped*/
+.collapsedSearchBox {
+    width: 0;
+    transition: 0.4s;
+    padding: 0;
+}
+
+.login {
+    margin-left: 30px;
+    height: 25px;
+    display: flex;
+    color: #888888;
+    border: #888888 1px solid;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.login-item {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.noshow{
+    display: none;
+}
+
+.verticalLine {
+    width: 1px;
+    background: #888888;
+    height: 60%;
+}
+
+@media screen and (max-width: 767px) {
+ .navbar-toggler{
+     margin-left: auto;
+     /*margin-right: 60px;*/
+ }
+    .logo {
+        position: absolute;
+        right: 55px;
+        top: 20px;
+        height: 26px;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .nav-link {
+        margin: 0 10px;
+        color: #888888 !important;
+    }
+}
