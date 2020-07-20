@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './orderDropDown.css'
 import {Dropdown, DropdownItem, DropdownMenu, DropdownToggle} from "reactstrap";
+import arrow from "../../../../../../images/Arrow_off.png";
 
 const OrderDropDown = () => {
 
@@ -11,6 +12,7 @@ const OrderDropDown = () => {
         <div className='aaaa'>
             <Dropdown isOpen={dropdownOpen} toggle={toggle}>
                 <DropdownToggle caret>
+                    <img className='arrowDown' src={arrow}/>
                     ترتیب
                 </DropdownToggle>
                 <DropdownMenu>

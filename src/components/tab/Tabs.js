@@ -8,47 +8,54 @@ import MediaAndNews from "./tabsContent/mediaAndNews/MediaAndNews";
 import Forum from "./tabsContent/forum/Forum";
 
 const Tabs = () => {
+    const [tab, setTab] = useState({
+        '1': false,
+        '2': false,
+        '3': true,
+        '4': false
+    })
 
-    const onSomeEvent = (id) => {
+    const [active, setActive] = useState("3");
+
+    const handleClick = (id) => {
+        setActive(id)
+        console.log(active)
         if (id === "1") {
-            setShowForum(true)
-            setShowAds(false)
-            setShowMediaAndNews(false)
-            setShowTournament(false)
+            setTab({ '1': true, '2': false, '3': false, '4': false})
         } else if (id === "2") {
-            setShowMediaAndNews(true)
-            setShowTournament(false)
-            setShowAds(false)
-            setShowForum(false)
+            setTab({ '1': false, '2':true , '3': false, '4': false})
         } else if (id === "3") {
-            setShowAds(true)
-            setShowMediaAndNews(false)
-            setShowTournament(false)
-            setShowForum(false)
+            setTab({ '1': false, '2':false , '3': true, '4': false})
         } else if (id === "4") {
-            setShowTournament(true)
-            setShowMediaAndNews(false)
-            setShowAds(false)
-            setShowForum(false)
+            setTab({ '1': false, '2':false , '3': false, '4': true})
         }
     };
 
-    const [showAds, setShowAds] = useState(false);
-    const [showTournament, setShowTournament] = useState(false);
-    const [showForum, setShowForum] = useState(true);
-    const [showMediaAndNews, setShowMediaAndNews] = useState(false);
 
     return (
         <div className="tabWrapper">
             <p className='pageTitle'>گیمز باز/<span>صفحه اصلی</span></p>
             <div className='tabs'>
-                {tabs.Items.map(item => <TabItem key={item.id} item={item} onSomeEvent={onSomeEvent}/>)}
+                {
+                    tabs.Items.map(
+                        item =>
+                            <div className="tabItemWrapper"
+                                 onClick={() => handleClick(item.id)}>
+                                <div className='tabItemIconHolder'>
+                                    <img className={active == item.id ? 'tabItemIcon large' : 'tabItemIcon small' }
+                                         src={active == item.id ? require(`../../images/${item.iconOn}.png`) : require(`../../images/${item.iconOff}.png`)}/>
+                                </div>
+                                <p className={active == item.id ? "green-text" : ""}>{item.name}</p>
+                            </div>
+
+                    )
+                }
             </div>
             <div className="horizontalLine"/>
-            {(showAds === true) ? <Ads/> : null}
-            {(showTournament === true) ? <Tournament/> : null}
-            {(showForum === true) ? <Forum/> : null}
-            {(showMediaAndNews === true) ? <MediaAndNews/> : null}
+            {(tab[1] === true) ? <Forum/> : null}
+            {(tab[2] === true) ? <MediaAndNews/> : null}
+            {(tab[3] === true) ?  <Ads/>: null}
+            {(tab[4] === true) ?  <Tournament/>: null}
         </div>
     );
 };

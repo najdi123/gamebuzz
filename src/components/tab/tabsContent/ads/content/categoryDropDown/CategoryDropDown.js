@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import "./categoryDropDown.css"
+import arrow from "../../../../../../images/Arrow_off.png"
 import {Dropdown, DropdownItem, DropdownMenu, DropdownToggle} from "reactstrap";
 
 const CategoryDropDown = () => {
@@ -9,7 +10,9 @@ const CategoryDropDown = () => {
     return (
         <div className="adsCategoryDropDown">
             <Dropdown isOpen={dropdownOpen} toggle={toggle}>
+
                 <DropdownToggle caret>
+                    <img className='arrowDown' src={arrow}/>
                     دسته
                 </DropdownToggle>
                 <DropdownMenu>
@@ -21,6 +24,7 @@ const CategoryDropDown = () => {
                     <DropdownItem>Bar Action</DropdownItem>
                     <DropdownItem>Quo Action</DropdownItem>
                 </DropdownMenu>
+
             </Dropdown>
         </div>
     );

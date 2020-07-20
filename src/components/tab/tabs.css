@@ -28,3 +28,14 @@
     background: #888888;
     width: 100%;
 }
+.green-text{
+    color: green !important;
+    font-size: 2rem !important;
+}
+
+.large{
+    width: 120% !important;
+}
+.small{
+    width: 70% !important;
+}
